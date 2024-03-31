@@ -1,6 +1,6 @@
 from setuptools import setup
 
-from blue_plugin import NAME, VERSION, DESCRIPTION
+from pbp import NAME, VERSION, DESCRIPTION
 
 setup(
     name=NAME,

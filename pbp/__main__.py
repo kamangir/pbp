@@ -1,6 +1,6 @@
 import argparse
-from blue_plugin import NAME, VERSION, DESCRIPTION
-from blue_plugin.logger import logger
+from pbp import NAME, VERSION, DESCRIPTION
+from pbp.logger import logger
 
 parser = argparse.ArgumentParser(NAME, description=f"{NAME}-{VERSION}")
 parser.add_argument(
