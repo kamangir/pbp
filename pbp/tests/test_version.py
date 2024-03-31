@@ -1,4 +1,4 @@
-from blue_plugin import VERSION
+from pbp import VERSION
 
 
 def test_version():
