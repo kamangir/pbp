@@ -4,4 +4,4 @@ ICON = "📚"
 
 DESCRIPTION = f"{ICON} mirror of Pro Bash Programming: Scripting the GNU/Linux Shell."
 
-VERSION = "3.22.1"
+VERSION = "3.23.1"

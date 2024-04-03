@@ -1,6 +1,5 @@
 import os
 from pbp.digest import digest
-from abcli import env
 from abcli.modules import objects
 from abcli import file
 
@@ -11,15 +10,11 @@ def test_digest():
         objects.unique_object(),
     )
 
+    pbp_git_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+
     assert digest(
-        digest_filename=os.path.join(
-            env.abcli_path_git,
-            "pbp/assets/digest.yaml",
-        ),
-        source_path=os.path.join(
-            env.abcli_path_git,
-            "pbp",
-        ),
+        digest_filename=os.path.join(pbp_git_path, "assets/digest.yaml"),
+        source_path=pbp_git_path,
         destination_filename=destination_filename,
     )
 
