@@ -4,7 +4,7 @@ https://cfajohnson.com/books/cfajohnson/pbp/
 
 # digested by pbp.digest.3.19.1
 # 📚 mirror of Pro Bash Programming: Scripting the GNU/Linux Shell.
-# 02 April 2024, 18:38:18
+# 02 April 2024, 18:38:23
 
 # ch11-Programming_for_the_Command_Line/functions::59:101
 menu()
