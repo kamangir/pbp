@@ -2,9 +2,9 @@
 # source: Pro Bash Programming: Scripting the GNU/Linux Shell
 # https://cfajohnson.com/books/cfajohnson/pbp/
 
-# digested by pbp.digest.3.20.1
+# digested by pbp.digest.3.23.1
 # 📚 mirror of Pro Bash Programming: Scripting the GNU/Linux Shell.
-# 02 April 2024, 18:38:55
+# 02 April 2024, 19:00:59
 
 # ch11-Programming_for_the_Command_Line/functions::59:101
 menu()
