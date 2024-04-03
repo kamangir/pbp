@@ -22,7 +22,7 @@ def digest(
     digest_text: List[str] = [
         "#! /usr/bin/env bash",
         "# source: Pro Bash Programming: Scripting the GNU/Linux Shell",
-        "https://cfajohnson.com/books/cfajohnson/pbp/",
+        "# https://cfajohnson.com/books/cfajohnson/pbp/",
         "",
         f"# digested by {NAME}.{VERSION}",
         f"# {DESCRIPTION}",

@@ -1,10 +1,10 @@
 #! /usr/bin/env bash
 # source: Pro Bash Programming: Scripting the GNU/Linux Shell
-https://cfajohnson.com/books/cfajohnson/pbp/
+# https://cfajohnson.com/books/cfajohnson/pbp/
 
-# digested by pbp.digest.3.19.1
+# digested by pbp.digest.3.20.1
 # 📚 mirror of Pro Bash Programming: Scripting the GNU/Linux Shell.
-# 02 April 2024, 18:38:23
+# 02 April 2024, 18:38:55
 
 # ch11-Programming_for_the_Command_Line/functions::59:101
 menu()
