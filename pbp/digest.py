@@ -22,7 +22,7 @@ def digest(
     ]
 
     for item in digest_list:
-        success, content = file.load_yaml(os.path.join((source_path, item["filename"])))
+        success, content = file.load_text(os.path.join(source_path, item["filename"]))
         if not success:
             return False
 

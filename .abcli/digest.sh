@@ -16,7 +16,7 @@ function pbp_digest() {
 
     abcli_eval dryrun=$do_dryrun \
         python3 -m pbp digest \
-        --digest_filename $abcli_path_git/assets/digest.yaml \
+        --digest_filename $abcli_path_git/pbp/assets/digest.yaml \
         --source_path $abcli_path_git/pbp \
         --destination_filename $abcli_path_git/pbp/.abcli/pbp_digest.sh \
         "${@:2}"
