@@ -1,7 +1,12 @@
 #! /usr/bin/env bash
-# digest from Pro Bash Programming: Scripting the GNU/Linux Shell
-# https://cfajohnson.com/books/cfajohnson/pbp/
+# source: Pro Bash Programming: Scripting the GNU/Linux Shell
+https://cfajohnson.com/books/cfajohnson/pbp/
 
+# digested by pbp.digest.3.19.1
+# 📚 mirror of Pro Bash Programming: Scripting the GNU/Linux Shell.
+# 02 April 2024, 18:38:18
+
+# ch11-Programming_for_the_Command_Line/functions::59:101
 menu()
 {
   local IFS=$' \t\n'                            ## Use default setting of IFS

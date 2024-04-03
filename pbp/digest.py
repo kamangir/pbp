@@ -1,24 +1,32 @@
 import os
 from typing import List
+from pbp import NAME, VERSION, DESCRIPTION
 from pbp.logger import logger
 from abcli import file
+from abcli import string
+
+NAME = f"{NAME}.digest"
 
 
 def digest(
-    digest_file: str,
+    digest_filename: str,
     source_path: str,
     destination_filename: str,
 ) -> bool:
     logger.info(f"digest: {source_path} -> {destination_filename}")
 
-    success, digest_list = file.load_yaml(digest_file)
+    success, digest_list = file.load_yaml(digest_filename)
     if not success:
         return success
 
     digest_text: List[str] = [
         "#! /usr/bin/env bash",
-        "# digest from Pro Bash Programming: Scripting the GNU/Linux Shell",
-        "# https://cfajohnson.com/books/cfajohnson/pbp/",
+        "# source: Pro Bash Programming: Scripting the GNU/Linux Shell",
+        "https://cfajohnson.com/books/cfajohnson/pbp/",
+        "",
+        f"# digested by {NAME}.{VERSION}",
+        f"# {DESCRIPTION}",
+        f"# {string.pretty_date()}",
     ]
 
     for item in digest_list:
@@ -28,6 +36,13 @@ def digest(
 
         logger.info(f"+= {item['filename']}")
 
-        digest_text += [""] + content[item["start"] : item["end"]]
+        digest_text += [
+            "",
+            "# {}::{}:{}".format(
+                item["filename"],
+                item["start"],
+                item["end"],
+            ),
+        ] + content[item["start"] : item["end"]]
 
     return file.save_text(destination_filename, digest_text)
