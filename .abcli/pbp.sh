@@ -8,6 +8,8 @@ function pbp() {
     local task=$(abcli_unpack_keyword $1 help)
 
     if [ $task == "help" ]; then
+        pbp_digest "$@"
+
         local task
         for task in pylint pytest test; do
             pbp $task "$@"
@@ -27,7 +29,9 @@ function pbp() {
 
     if [ "$task" == "init" ]; then
         abcli_init pbp "${@:2}"
-        conda activate pbp
+
+        [[ $(abcli_conda exists pbp) == 1 ]] &&
+            conda activate pbp
         return
     fi
 
