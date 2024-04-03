@@ -22,5 +22,5 @@ jobs:
           pip install -r requirements.txt
       - name: Run tests
         run: |
-          ls /home/runner/git/pbp/assets/
+          # ls /home/runner/git/pbp/assets/
           pytest
