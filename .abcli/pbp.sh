@@ -52,7 +52,7 @@ function pbp() {
 }
 
 abcli_source_path \
-    $abcli_path_git/blue-plugin/.abcli/tests
+    $abcli_path_git/pbp/.abcli/tests
 
 abcli_env dot load \
     plugin=pbp
