@@ -57,4 +57,4 @@ abcli_source_path \
 abcli_env dot load \
     plugin=pbp
 abcli_env dot load \
-    filename=config.env,plugin=pbp
+    filename=pbp/config.env,plugin=pbp
