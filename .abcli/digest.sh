@@ -25,9 +25,7 @@ function pbp_digest() {
         abcli_init pbp
 
     if [[ "$do_push" == 1 ]]; then
-        abcli_git push \
-            pbp \
-            accept_no_issue \
+        abcli_git pbp push \
             "$(python3 -m pbp version) digest"
     else
         abcli_git pbp status
