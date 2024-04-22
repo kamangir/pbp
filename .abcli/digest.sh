@@ -28,6 +28,6 @@ function pbp_digest() {
         abcli_git pbp push \
             "$(python3 -m pbp version) digest"
     else
-        abcli_git pbp status
+        abcli_git pbp status ~all
     fi
 }
